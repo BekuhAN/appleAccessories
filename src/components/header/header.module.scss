@@ -1,0 +1,38 @@
+.header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    &__link {
+      padding: 15px 20px;
+      text-transform: uppercase;
+      color: #242424;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #797979;
+      }
+    }
+  }
+  &__logo {
+    text-align: center;
+    transition: .3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+  }
+}

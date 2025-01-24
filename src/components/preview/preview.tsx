@@ -8,11 +8,11 @@ export default function Preview(): ReactElement {
     <section className={styles.preview}>
       <div className={clsx("container", styles.preview__inner)}>
         <div className={styles.preview__content}>
-          <h2 className={styles.preview__content__title}>Apple аксессуары</h2>
+          <h2 className={styles.preview__content__title}>Магазин аксессуаров «ЭлеТЕХ»</h2>
           <p className={styles.preview__content__text}>
-            Премиальные аксессуары для устройств Apple, созданные для вашего
+            Премиальные аксессуары для устройств, созданные для вашего
             удобства. Объединяем стиль, качество и современные технологии в
-            каждой детали.{" "}
+            каждой детали.
           </p>
           <Link to="/catalog" className={styles.preview__content__btn}>
             Подробнее

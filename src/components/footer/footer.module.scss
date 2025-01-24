@@ -1,0 +1,48 @@
+.footer {
+  padding: 50px 0;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 1px solid #ccc;
+    padding: 25px 0;
+    &__link {
+      text-transform: capitalize;
+      opacity: 0.6;
+      font-weight: 600;
+      transition: 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    &__item {
+      font-size: 20px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #000;
+      opacity: 0.6;
+      transition: 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__copy {
+    text-align: center;
+    opacity: 0.8;
+  }
+}

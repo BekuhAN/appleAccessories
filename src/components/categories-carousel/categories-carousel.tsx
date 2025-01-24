@@ -1,7 +1,7 @@
-import React, { ReactElement, useEffect, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import style from "./categories-carousel.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/scss";
+import 'swiper/scss';
 import axios from "axios";
 import { cat } from "../../interfaces/cat";
 import { Link } from "react-router-dom";
@@ -38,7 +38,7 @@ export default function CategoriesCarousel(): ReactElement {
                     className={style.categories_carousel__item__link}
                     to="/catalog"
                   >
-                    Подробнее{" "}
+                    Подробнее
                     <span
                       className={style.categories_carousel__item__link__icon}
                     >

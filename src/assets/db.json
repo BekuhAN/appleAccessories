@@ -59,6 +59,9 @@
       "name": "Чехол Apple для iPhone 16 Pro Max Silicone with MagSafe, фуксия",
       "img": "1.jpg",
       "price": 8900,
+      "oldPrice": 13900,
+      "new": false,
+      "popular": false,
       "category": 1,
       "info": [
         {
@@ -98,6 +101,9 @@
       "name": "Чехол Apple Silicone Case для iPad Pro 9,7 васильковый",
       "img": "2.jpg",
       "price": 2450,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 1,
       "info": [
         {
@@ -122,6 +128,9 @@
       "name": "Чехол-клавиатура Apple Magic Keyboard для iPad Pro 12,9, черный",
       "img": "3.jpg",
       "price": 47990,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 1,
       "info": [
         {
@@ -151,6 +160,9 @@
       "name": "Чехол-конверт Apple MagSafe для iPhone 12 Pro Max, кожа, «розовый цитрус»",
       "img": "4.jpg",
       "price": 1900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 1,
       "info": [
         {
@@ -190,6 +202,9 @@
       "name": "Чехол Apple Smart Folio для iPad Air (4‑го поколения), чёрный",
       "img": "5.jpg",
       "price": 9900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 1,
       "info": [
         {
@@ -224,6 +239,9 @@
       "name": "Чехол Apple для iPhone 16 Pro Max Silicone with MagSafe, желтый",
       "img": "6.jpg",
       "price": 8900,
+      "oldPrice": 13900,
+      "new": false,
+      "popular": false,
       "category": 1,
       "info": [
         {
@@ -258,6 +276,9 @@
       "name": "Чехол Apple для iPhone FineWoven Wallet MagSafe, глубокий синий",
       "img": "7.jpg",
       "price": 8490,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 1,
       "info": [
         {
@@ -292,6 +313,9 @@
       "name": "Чехол Apple для iPhone 16 MagSafe, прозрачный",
       "img": "8.jpg",
       "price": 6900,
+      "oldPrice": 7900,
+      "new": true,
+      "popular": false,
       "category": 1,
       "info": [
         {
@@ -331,6 +355,9 @@
       "name": "Чехол-клавиатура Apple Magic Keyboard Folio для iPad 10,9, белый",
       "img": "9.jpg",
       "price": 33900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 1,
       "info": [
         {
@@ -365,6 +392,9 @@
       "name": "Чехол Apple Smart Folio iPad Air 11 (M2) светло-зеленый",
       "img": "10.jpg",
       "price": 11900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 1,
       "info": [
         {
@@ -404,6 +434,9 @@
       "name": "Адаптер питания Apple USB-C 96 Вт, белый",
       "img": "11.jpg",
       "price": 10900,
+      "oldPrice": 14900,
+      "new": false,
+      "popular": false,
       "category": 2,
       "info": [
         {
@@ -428,6 +461,9 @@
       "name": "Зарядное устройство Apple MagSafe, 2 м",
       "img": "12.jpg",
       "price": 6900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 2,
       "info": [
         {
@@ -457,6 +493,9 @@
       "name": "Кабель Apple USB-C Charge 60W 1 м, Белый",
       "img": "13.jpg",
       "price": 3490,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 2,
       "info": [
         {
@@ -481,6 +520,9 @@
       "name": "Кабель Apple USB-C/Magsafe 3, 2м, белый",
       "img": "14.jpg",
       "price": 6900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 2,
       "info": [
         {
@@ -510,6 +552,9 @@
       "name": "Адаптер USB-C для Apple Pencil, белый",
       "img": "15.jpg",
       "price": 2900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 2,
       "info": [
         {
@@ -539,6 +584,9 @@
       "name": "Адаптер Apple USB-C/USB",
       "img": "16.jpg",
       "price": 2400,
+      "oldPrice": 3200,
+      "new": true,
+      "popular": false,
       "category": 2,
       "info": [
         {
@@ -553,6 +601,9 @@
       "name": "Док-станция Apple iPhone Lightning Dock",
       "img": "17.jpg",
       "price": 2900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 2,
       "info": [
         {
@@ -567,6 +618,9 @@
       "name": "Адаптер питания Apple USB-C 20 Вт",
       "img": "18.jpg",
       "price": 3290,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 2,
       "info": [
         {
@@ -591,6 +645,9 @@
       "name": "Адаптер Apple Lightning/выход 3,5 мм для наушников, белый",
       "img": "19.jpg",
       "price": 1900,
+      "oldPrice": 2490,
+      "new": false,
+      "popular": true,
       "category": 2,
       "info": [
         {
@@ -615,6 +672,9 @@
       "name": "Кабель Apple Lightning/USB (1 м)",
       "img": "20.jpg",
       "price": 2490,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 2,
       "info": [
         {
@@ -639,6 +699,9 @@
       "name": "Ремешок Apple 49 мм Trail Loop, черного цвета, черный титан, размер M/L",
       "img": "21.jpg",
       "price": 15900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -678,6 +741,9 @@
       "name": "Ремешок Apple Sport Band 46 мм, «деним», M/L",
       "img": "22.jpg",
       "price": 7900,
+      "oldPrice": 10900,
+      "new": false,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -712,6 +778,9 @@
       "name": "Ремешок Apple 46 мм «Миланская петля», золотого цвета, размер M/L",
       "img": "23.jpg",
       "price": 15900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -746,6 +815,9 @@
       "name": "Ремешок Apple Modern Buckle 42 мм, коричневый, M",
       "img": "24.jpg",
       "price": 23900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -780,6 +852,9 @@
       "name": "Ремешок Apple 46 мм Nike Sport Band, цвета «синее пламя», размер M/L",
       "img": "25.jpg",
       "price": 7900,
+      "oldPrice": 9900,
+      "new": false,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -814,6 +889,9 @@
       "name": "Ремешок Apple Magnetic Link 46 мм, черный, S/M",
       "img": "26.jpg",
       "price": 15900,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -848,6 +926,9 @@
       "name": "Ремешок Apple Nike Sport Loop 42 мм, цвета «сияющая звезда/розовый»",
       "img": "27.jpg",
       "price": 7900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -882,6 +963,9 @@
       "name": "Спортивный ремешок для Apple Watch Nike, 41 мм, зелено-голубой",
       "img": "28.jpeg",
       "price": 4900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -916,6 +1000,9 @@
       "name": "Браслет для Apple Watch 45 мм, миланский сетчатый, золотой",
       "img": "29.jpg",
       "price": 11030,
+      "oldPrice": 12000,
+      "new": false,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -945,6 +1032,9 @@
       "name": "Ремешок Apple Magnetic Link 46 мм, черничный, S/M",
       "img": "30.jpg",
       "price": 15900,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 3,
       "info": [
         {
@@ -981,781 +1071,566 @@
     },
     {
       "id": 31,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Трекпад Apple Magic Trackpad USB-C, черный",
+      "img": "31.jpg",
+      "price": 22900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "черный"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Высота, мм",
+          "text": "11"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
+          "title": "Ширина, мм",
+          "text": "160"
         },
         {
           "id": 4,
-          "title": "",
-          "text": ""
+          "title": "Глубина, мм",
+          "text": "114"
         },
         {
           "id": 5,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "230  "
         },
         {
           "id": 6,
-          "title": "",
-          "text": ""
+          "title": "В комплекте",
+          "text": "кабель USB-C"
         }
       ]
     },
     {
       "id": 32,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Мышь Apple Magic Mouse USB-C, белый",
+      "img": "32.jpg",
+      "price": 12900,
+      "oldPrice": 15900,
+      "new": false,
+      "popular": false,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Тип подключения",
+          "text": "USB-C"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Беспроводное подключение",
+          "text": "Bluetooth"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "белый"
         },
         {
           "id": 4,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "99"
         },
         {
           "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "В комплекте",
+          "text": "кабель USB-C"
         }
       ]
     },
     {
       "id": 33,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Клавиатура Apple Magic Keyboard Touch ID USB-C",
+      "img": "33.jpg",
+      "price": 22900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Раскладка",
+          "text": "Русская"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Мультимедийные клавиши",
+          "text": "Да"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
+          "title": "Тип подключения",
+          "text": "USB-C"
         },
         {
           "id": 4,
-          "title": "",
-          "text": ""
+          "title": "Беспроводное подключение",
+          "text": "Bluetooth"
         },
         {
           "id": 5,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "белый"
         },
         {
           "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "243"
         }
       ]
     },
     {
       "id": 34,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Клавиатура Apple Magic Keyboard USB-C",
+      "img": "34.jpg",
+      "price": 16900,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Раскладка",
+          "text": "Русская"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Мультимедийные клавиши",
+          "text": "Да"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
+          "title": "Тип подключения",
+          "text": "USB-C"
         },
         {
           "id": 4,
-          "title": "",
-          "text": ""
+          "title": "Беспроводное подключение",
+          "text": "Bluetooth"
         },
         {
           "id": 5,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "белый"
         },
         {
           "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "238"
         }
       ]
     },
     {
       "id": 35,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Мышь Apple Magic Mouse USB-C, черный",
+      "img": "35.jpg",
+      "price": 15900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Тип подключения",
+          "text": "USB-C"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Беспроводное подключение",
+          "text": "Bluetooth"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "черный"
         },
         {
           "id": 4,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "99"
         },
         {
           "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "В комплекте",
+          "text": "кабель USB-C"
         }
       ]
     },
     {
       "id": 36,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Клавиатура Apple Magic Keyboard Touch ID Numeric Keypad USB-C, черный",
+      "img": "36.jpg",
+      "price": 25900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Раскладка",
+          "text": "Русская"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Мультимедийные клавиши",
+          "text": "Да"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
+          "title": "Тип подключения",
+          "text": "USB-C"
         },
         {
           "id": 4,
-          "title": "",
-          "text": ""
+          "title": "Беспроводное подключение",
+          "text": "Bluetooth"
         },
         {
           "id": 5,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "черный"
         },
         {
           "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "369"
         }
       ]
     },
     {
       "id": 37,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Стилус Apple Pencil Pro белый",
+      "img": "37.jpg",
+      "price": 19900,
+      "oldPrice": 22900,
+      "new": true,
+      "popular": false,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Беспроводное подключение",
+          "text": "Bluetooth"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "белый"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "19"
         }
       ]
     },
     {
       "id": 38,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Наконечники Apple для Apple Pencil, 4 шт",
+      "img": "38.jpg",
+      "price": 4900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "белый"
         }
       ]
     },
     {
       "id": 39,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Мышь Apple Magic Mouse, черный",
+      "img": "39.jpg",
+      "price": 14900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Количество клавиш",
+          "text": "2"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Тип подключения",
+          "text": "Lightning"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
+          "title": "Беспроводное подключение",
+          "text": "Bluetooth 4.2"
         },
         {
           "id": 4,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "пластик"
         },
         {
           "id": 5,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "черный"
         },
         {
           "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "99"
         }
       ]
     },
     {
       "id": 40,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Стилус Apple Pencil USB-C, белый",
+      "img": "40.jpg",
+      "price": 13900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 4,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Беспроводное подключение",
+          "text": "Bluetooth"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "белый"
         },
         {
           "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Вес, г",
+          "text": "20.5"
         }
       ]
     },
     {
       "id": 41,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Брелок  uBear Capital Case для AirTag",
+      "img": "41.jpeg",
+      "price": 1900,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "натуральная кожа"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Совместимость",
+          "text": "Apple AirTag"
         }
       ]
     },
     {
       "id": 42,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Брелок с карабином Native Union Classic Holder",
+      "img": "42.jpg",
+      "price": 7900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "кожа"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Совместимость",
+          "text": "Apple AirTag"
         }
       ]
     },
     {
       "id": 43,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Брелок с карабином и заводным кольцом Spigen Rugged Armor",
+      "img": "43.jpg",
+      "price": 2900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "цинк"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Совместимость",
+          "text": "Apple AirTag"
         }
       ]
     },
     {
       "id": 44,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Силиконовый брелок с карабином elago Ice Cream Case",
+      "img": "44.jpg",
+      "price": 1900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "силикон"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Совместимость",
+          "text": "Apple AirTag"
         }
       ]
     },
     {
       "id": 45,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Силиконовый брелок с карабином elago Floppy Disk Case",
+      "img": "45.jpg",
+      "price": 900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "силикон"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Совместимость",
+          "text": "Apple AirTag"
         }
       ]
     },
     {
       "id": 46,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Брелок из экокожи с карабином Spigen Valentinus",
+      "img": "46.jpg",
+      "price": 2900,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "эко-кожа, металл"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Совместимость",
+          "text": "Apple AirTag"
         }
       ]
     },
     {
       "id": 47,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Кожаный брелок с заводным кольцом Nomad",
+      "img": "47.jpeg",
+      "price": 3900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "Натуральная кожа Horween"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Совместимость",
+          "text": "Apple AirTag"
         }
       ]
     },
     {
       "id": 48,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Кожаный брелок-подвеска Apple Leather Loop",
+      "img": "48.jpg",
+      "price": 3900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": false,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
+          "title": "Материал",
+          "text": "натуральная кожа"
         },
         {
           "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Совместимость",
+          "text": "Apple AirTag"
         }
       ]
     },
     {
       "id": 49,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Поисковый трекер Apple AirTag белый",
+      "img": "49.jpg",
+      "price": 4900,
+      "oldPrice": 0,
+      "new": false,
+      "popular": true,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "серебристый"
         }
       ]
     },
     {
       "id": 50,
-      "name": "",
-      "img": "1.jpg",
-      "price": 8900,
+      "name": "Поисковый трекер Apple AirTag (4 штуки)",
+      "img": "50.jpg",
+      "price": 13900,
+      "oldPrice": 0,
+      "new": true,
+      "popular": false,
       "category": 5,
       "info": [
         {
           "id": 1,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 2,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 3,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 4,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 5,
-          "title": "",
-          "text": ""
-        },
-        {
-          "id": 6,
-          "title": "",
-          "text": ""
+          "title": "Цвет",
+          "text": "серебристый"
         }
       ]
     }

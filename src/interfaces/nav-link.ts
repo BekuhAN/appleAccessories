@@ -1,6 +1,6 @@
 import { BaseModel } from "./base-model";
 
-export interface navLink extends BaseModel  {
+export interface NavLink extends BaseModel  {
     title: string;
     url: string;
   }

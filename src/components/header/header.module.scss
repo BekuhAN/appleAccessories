@@ -23,10 +23,15 @@
     }
   }
   &__logo {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: .3s ease;
     &:hover {
       transform: scale(1.1);
+    }
+    img {
+      height: 50%;
     }
   }
   &__controls {
@@ -34,5 +39,6 @@
     align-items: center;
     justify-content: end;
     gap: 30px;
+    font-size: 25px;
   }
 }

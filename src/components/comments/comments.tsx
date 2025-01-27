@@ -4,8 +4,13 @@ import "swiper/css";
 import styles from "./comments.module.scss";
 import clsx from "clsx";
 import { Card, CardBody, User } from "@heroui/react";
+import { useComments } from "../../data-access/comments/use-comments";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 
 export default function Comments(): ReactElement {
+  const comments = useComments();
   return (
     <section className={styles.comments}>
       <div className={clsx("container", styles.comments__inner)}>
@@ -15,62 +20,33 @@ export default function Comments(): ReactElement {
           spaceBetween={50}
           slidesPerView={3}
         >
-          <SwiperSlide>
-            <Card isPressable>
-              <CardBody>
-                <div className={styles.comments__rating}></div>
-                <div className={styles.comments__text}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Sunt, mollitia?
-                </div>
-                <div className={styles.comments__author}>
-                  <User avatarProps={{}} name="name" />
-                </div>
-              </CardBody>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card isPressable>
-              <CardBody>
-                <div className={styles.comments__rating}></div>
-                <div className={styles.comments__text}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Sunt, mollitia?
-                </div>
-                <div className={styles.comments__author}>
-                  <User avatarProps={{}} name="name" />
-                </div>
-              </CardBody>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card isPressable>
-              <CardBody>
-                <div className={styles.comments__rating}></div>
-                <div className={styles.comments__text}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Sunt, mollitia?
-                </div>
-                <div className={styles.comments__author}>
-                  <User avatarProps={{}} name="name" />
-                </div>
-              </CardBody>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card isPressable>
-              <CardBody>
-                <div className={styles.comments__rating}></div>
-                <div className={styles.comments__text}>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Sunt, mollitia?
-                </div>
-                <div className={styles.comments__author}>
-                  <User avatarProps={{}} name="name" />
-                </div>
-              </CardBody>
-            </Card>
-          </SwiperSlide>
+          {comments.length > 0 &&
+            comments.map((item) => {
+              return (
+                <SwiperSlide key={item.id}>
+                  <Card
+                    isPressable
+                    classNames={{ body: styles.comments__item }}
+                  >
+                    <CardBody>
+                      <div className={styles.comments__rating}>
+                        <div className={styles.comments__rating__stars}>
+                          {"☆".repeat(5)}
+                        </div>
+                        <div className={styles.comments__rating__stars}>
+                          {item.rating > 0 && "★".repeat(item.rating)}
+                        </div>
+                      </div>
+                      <div className={styles.comments__text}>{item.text}</div>
+                      <User
+                        avatarProps={{ src: `/img/${item.img}` }}
+                        name={item.name}
+                      />
+                    </CardBody>
+                  </Card>
+                </SwiperSlide>
+              );
+            })}
         </Swiper>
       </div>
     </section>

@@ -1,15 +1,38 @@
 .comments {
-    &__inner {
-        padding: 100px 150px;
+  &__inner {
+    padding: 100px 150px;
+  }
+  &__title {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__list {
+    padding: 30px;
+  }
+  &__item {
+    padding: 30px;
+    align-items: start;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  &__text {
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+  &__rating {
+    position: relative;
+    height: 20px;
+    &__stars {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 20px;
+      line-height: 1;
+      color: #ffc107;
     }
-    &__title {
-        font-size: 40px;
-        text-transform: capitalize;
-        font-weight: 500;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    &__list {
-        padding: 30px;
-    }
+  }
 }

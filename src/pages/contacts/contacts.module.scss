@@ -1,0 +1,55 @@
+.contacts {
+  &__inner {
+    padding: 100px 150px;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    &__wrapper {
+      padding: 100px;
+    }
+    &__title {
+      font-size: 40px;
+      text-transform: capitalize;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 9fr;
+      gap: 30px;
+      margin-bottom: 15px;
+      &__icon {
+        font-size: 26px;
+      }
+      &__title {
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+        color: #000;
+      }
+      &__description {
+        font-size: 15px;
+        line-height: 1.5;
+        opacity: 0.6;
+      }
+    }
+  }
+  &__form {
+    &__title {
+      font-size: 40px;
+      text-transform: capitalize;
+      font-weight: 500;
+      margin-bottom: 20px;
+      text-align: center;
+      margin: 50px 0;
+    }
+  }
+}

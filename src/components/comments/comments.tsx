@@ -5,9 +5,6 @@ import styles from "./comments.module.scss";
 import clsx from "clsx";
 import { Card, CardBody, User } from "@heroui/react";
 import { useComments } from "../../data-access/comments/use-comments";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faStar as farStar } from "@fortawesome/free-regular-svg-icons";
 
 export default function Comments(): ReactElement {
   const comments = useComments();

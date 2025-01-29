@@ -18,7 +18,7 @@
     {
       "id": 4,
       "title": "Контакты",
-      "url": "/contact"
+      "url": "/contacts"
     }
   ],
   "categories": [
@@ -62,7 +62,7 @@
       "oldPrice": 13900,
       "new": false,
       "popular": false,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -104,7 +104,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -131,7 +131,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -163,7 +163,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -205,7 +205,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -242,7 +242,7 @@
       "oldPrice": 13900,
       "new": false,
       "popular": false,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -279,7 +279,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -316,7 +316,7 @@
       "oldPrice": 7900,
       "new": true,
       "popular": false,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -358,7 +358,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -395,7 +395,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 1,
+      "categoryId": 1,
       "info": [
         {
           "id": 1,
@@ -437,7 +437,7 @@
       "oldPrice": 14900,
       "new": false,
       "popular": false,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -464,7 +464,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -496,7 +496,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -523,7 +523,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -555,7 +555,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -587,7 +587,7 @@
       "oldPrice": 3200,
       "new": true,
       "popular": false,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -604,7 +604,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -621,7 +621,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -648,7 +648,7 @@
       "oldPrice": 2490,
       "new": false,
       "popular": true,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -675,7 +675,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 2,
+      "categoryId": 2,
       "info": [
         {
           "id": 1,
@@ -702,7 +702,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -744,7 +744,7 @@
       "oldPrice": 10900,
       "new": false,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -781,7 +781,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -818,7 +818,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -855,7 +855,7 @@
       "oldPrice": 9900,
       "new": false,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -892,7 +892,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -929,7 +929,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -966,7 +966,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -1003,7 +1003,7 @@
       "oldPrice": 12000,
       "new": false,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -1035,7 +1035,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 3,
+      "categoryId": 3,
       "info": [
         {
           "id": 1,
@@ -1077,7 +1077,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1119,7 +1119,7 @@
       "oldPrice": 15900,
       "new": false,
       "popular": false,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1156,7 +1156,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1198,7 +1198,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1240,7 +1240,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1277,7 +1277,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1319,7 +1319,7 @@
       "oldPrice": 22900,
       "new": true,
       "popular": false,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1346,7 +1346,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1363,7 +1363,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1405,7 +1405,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 4,
+      "categoryId": 4,
       "info": [
         {
           "id": 1,
@@ -1432,7 +1432,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1454,7 +1454,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1476,7 +1476,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1498,7 +1498,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1520,7 +1520,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1542,7 +1542,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1564,7 +1564,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1586,7 +1586,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": false,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1608,7 +1608,7 @@
       "oldPrice": 0,
       "new": false,
       "popular": true,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,
@@ -1625,7 +1625,7 @@
       "oldPrice": 0,
       "new": true,
       "popular": false,
-      "category": 5,
+      "categoryId": 5,
       "info": [
         {
           "id": 1,

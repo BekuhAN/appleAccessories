@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement, useState } from "react";
 import {
   Button,
   Card,
@@ -24,6 +24,12 @@ import {
   removeWishList,
 } from "../../features/wishlist/wishlist";
 import { useDispatch, useSelector } from "react-redux";
+import {
+  addCart,
+  removeCart,
+  getCart,
+  editCart,
+} from "../../features/cart/cart";
 
 const priceFormat = (price: number) =>
   price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ");
@@ -42,26 +48,33 @@ export default function Product({
   const { isOpen, onOpen, onClose } = useDisclosure();
   const dispatch = useDispatch();
   const wishlist = useSelector(getWishList);
+  const cart = useSelector(getCart);
+  const [countProduct, setCountProduct] = useState(1);
+  function removeList() {
+    if (isCart) {
+      dispatch(removeCart(item));
+    } else {
+      dispatch(removeWishList(item.id));
+    }
+  }
+  const [count, setCount] = useState(item.count);
   return (
     <>
-      <Card
-        className={clsx(styles.product)}
-        isPressable
-        shadow="sm"
-        onPress={onOpen}
-      >
+      <Card className={clsx(styles.product)} shadow="sm">
         <CardBody className="overflow-visible p-0">
           <div
             className={clsx(styles.product__item, isRow && styles.product__row)}
           >
-            <div className={styles.product__image}>
+            <div className={styles.product__image} onClick={onOpen}>
               <img src={`/img/product/${item.img}`} alt={item.name} />
               {item && item.oldPrice > 0 && (
                 <div className={styles.product__image__overlay}>Скидка %</div>
               )}
             </div>
             <div className={styles.product__content}>
-              <div className={styles.product__title}>{item.name} </div>
+              <div className={styles.product__title} onClick={onOpen}>
+                {item.name}{" "}
+              </div>
               <div className={styles.product__price}>
                 {priceFormat(item.price)} ₽
                 {item && item.oldPrice > 0 && (
@@ -69,36 +82,40 @@ export default function Product({
                     {priceFormat(item.oldPrice)} ₽
                   </span>
                 )}
-                <div className={styles.product__controls}>
-                  {isCart && (
-                    <Input
-                      endContent={
-                        <div className="pointer-events-none flex items-center">
-                          <span className="text-default-400 text-small">
-                            шт.
-                          </span>
-                        </div>
-                      }
-                      labelPlacement="outside"
-                      placeholder="1"
-                      min={1}
-                      max={100}
-                      classNames={{
-                        base: clsx(styles.product__info__buy__input),
-                      }}
-                      type="number"
-                    />
-                  )}
-                  {isRow && (
-                    <FontAwesomeIcon
-                      icon={faTrashCan}
-                      className={styles.product__remove}
-                      onClick={() => {
-                        dispatch(removeWishList(item.id));
-                      }}
-                    />
-                  )}
-                </div>
+                {isRow && (
+                  <div className={styles.product__controls}>
+                    {isCart && (
+                      <Input
+                        endContent={
+                          <div className="pointer-events-none flex items-center">
+                            <span className="text-default-400 text-small">
+                              шт.
+                            </span>
+                          </div>
+                        }
+                        labelPlacement="outside"
+                        min={1}
+                        max={100}
+                        value={count?.toString()}
+                        onValueChange={(e) => {
+                          setCount(Number(e));
+                          dispatch(editCart({ ...item, count: Number(e) }));
+                        }}
+                        classNames={{
+                          base: clsx(styles.product__info__buy__input),
+                        }}
+                        type="number"
+                      />
+                    )}
+                    {isRow && (
+                      <FontAwesomeIcon
+                        icon={faTrashCan}
+                        className={styles.product__remove}
+                        onClick={removeList}
+                      />
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -159,13 +176,22 @@ export default function Product({
                         classNames={{
                           base: styles.product__info__buy__input,
                         }}
+                        value={count?.toString()}
                         type="number"
+                        onValueChange={(e) => setCountProduct(Number(e))}
+                        isDisabled={cart.some((i) => i.id === item.id)}
                       />
                       <Button
                         className={styles.product__info__buy__btn}
                         variant="ghost"
+                        onPress={() =>
+                          dispatch(addCart({ ...item, count: countProduct }))
+                        }
+                        isDisabled={cart.some((i) => i.id === item.id)}
                       >
-                        В Корзину
+                        {cart.some((i) => i.id === item.id)
+                          ? "В корзине"
+                          : "В Корзину"}
                       </Button>
                       <div className={styles.product__info__heart}>
                         {wishlist.find((i) => i.id === item.id) ? (

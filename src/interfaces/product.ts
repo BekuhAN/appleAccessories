@@ -9,5 +9,6 @@ export interface ProductItem extends BaseModel  {
     new: boolean,
     popular: boolean,
     category: number,
-    info: Array<infoItem>
+    info: Array<infoItem>,
+    count?: number
   }

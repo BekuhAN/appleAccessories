@@ -13,14 +13,25 @@ import {
 } from "@heroui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { useDispatch, useSelector } from "react-redux";
+import { getWishList, setWishList } from "../../features/wishlist/wishlist";
+import Product from "../product/product";
 
 export default function Wishlist(): ReactElement {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const list = useSelector(getWishList);
+  const dispatch = useDispatch();
+
   return (
     <>
       <div className={styles.wishlist__icon} onClick={onOpen}>
-        <Badge color="danger" placement="bottom-right" content="5">
-          <Tooltip content="Избранное" showArrow={true} placement="bottom" color="danger">
+        <Badge color="danger" placement="bottom-right" content={list.length}>
+          <Tooltip
+            content="Избранное"
+            showArrow={true}
+            placement="bottom"
+            color="danger"
+          >
             <FontAwesomeIcon icon={faHeart} />
           </Tooltip>
         </Badge>
@@ -32,13 +43,27 @@ export default function Wishlist(): ReactElement {
               <DrawerHeader className="flex flex-col gap-1">
                 Избранное
               </DrawerHeader>
-              <DrawerBody>Пусто :(</DrawerBody>
+              <DrawerBody>
+                {list.length > 0 ? (
+                  <div className={styles.wishlist__list}>
+                    {list.map((item) => (
+                      <Product key={item.id} item={item} isRow={true} />
+                    ))}
+                  </div>
+                ) : (
+                  <div>Пусто :(</div>
+                )}
+              </DrawerBody>
               <DrawerFooter>
-                <Button color="primary" onPress={onClose}>
+                <Button
+                  color="warning"
+                  variant="ghost"
+                  onPress={() => dispatch(setWishList([]))}
+                >
                   Очистить
                 </Button>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Отмена
+                <Button color="default" variant="ghost" onPress={onClose}>
+                  Закрыть
                 </Button>
               </DrawerFooter>
             </>

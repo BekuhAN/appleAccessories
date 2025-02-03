@@ -1,4 +1,43 @@
 .product {
+  $this: &;
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    #{$this}__image {
+      height: 100px;
+      padding: 5px;
+    }
+    #{$this}__title {
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    #{$this}__price {
+      justify-content: start;
+    }
+    #{$this}__image__overlay {
+      top: -50px;
+      right: -110px;
+      height: 20px;
+      font-size: 10px;
+    }
+    #{$this}__content {
+      padding-right: 20px;
+    }
+  }
+  &__controls {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__remove {
+    transition: 0.3s;
+    font-size: 18px;
+    &:hover {
+      color: #ff4343;
+    }
+  }
   &__image {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -35,8 +74,9 @@
     padding: 15px 0;
   }
   &__title {
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     padding: 0px 10px;
     font-weight: 600;
@@ -69,6 +109,10 @@
         height: 100%;
         object-fit: contain;
       }
+    }
+    &__heart {
+      margin-left: auto;
+      font-size: 24px;
     }
     &__title {
       font-size: 24px;
@@ -126,7 +170,6 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      width: 60%;
       &__input {
         width: 150px;
       }

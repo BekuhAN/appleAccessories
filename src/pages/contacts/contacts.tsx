@@ -1,4 +1,4 @@
-import { ReactElement, useState } from "react";
+import { FormEvent, ReactElement, useRef, useState } from "react";
 import styles from "./contacts.module.scss";
 import PageTitle from "../../components/page-title/page-title";
 import clsx from "clsx";
@@ -9,11 +9,39 @@ import {
   faLocationDot,
   faMobileScreenButton,
 } from "@fortawesome/free-solid-svg-icons";
-import { Button, Form, Input, Textarea } from "@heroui/react";
+import { Alert, Button, Form, Input, Textarea } from "@heroui/react";
+import emailjs from "@emailjs/browser";
 
 export default function Contacts(): ReactElement {
-  const sendMail = (e: FormDataEvent) => {
+  const formRef = useRef<HTMLFormElement | null>(null);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState({
+    isError: false,
+    text: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    //hqvlamo357@ramvv.com
+    setLoading(true);
+    emailjs
+      .sendForm("service_099qjgo", "template_3lh4a2u", formRef.current || "", {
+        publicKey: "S1l_xUmzgej3DKyLo",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setLoading(false);
+          setSuccess(true);
+          e.currentTarget.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setLoading(false);
+          setError({ isError: true, text: error.text });
+        }
+      );
   };
   return (
     <main className={styles.contacts}>
@@ -85,7 +113,6 @@ export default function Contacts(): ReactElement {
               src="https://yandex.ru/map-widget/v1/?um=constructor%3A796749b952b64eb806058f1902e7d18d6406f417037ef360bb4650c48a02f923&amp;source=constructor"
               width="100%"
               height="100%"
-              frameborder="0"
             ></iframe>
           </div>
         </div>
@@ -93,43 +120,55 @@ export default function Contacts(): ReactElement {
           <h2 className={styles.contacts__form__title}>
             Отправьте нам сообщение
           </h2>
+
           <Form
             className="w-full flex gap-4 flex-row flex-wrap"
             validationBehavior="native"
-            // onSubmit={}
+            ref={formRef}
+            onSubmit={sendEmail}
           >
             <Input
               classNames={{ base: "w-50 flex-1", inputWrapper: "h-50" }}
               isRequired
-              errorMessage="Please enter a valid name"
-              label="Name"
+              errorMessage="Поле должно быть заполнено"
+              label="Имя"
               labelPlacement="outside"
-              name="name"
-              placeholder="Enter your name"
+              name="contact_name"
+              placeholder="Ваше имя"
               type="text"
               variant="bordered"
             />
             <Input
               classNames={{ base: "w-50 flex-1 ", inputWrapper: "h-50" }}
               isRequired
-              errorMessage="Please enter a valid email"
-              label="Email"
+              errorMessage="Не верно введена электронная почта"
+              label="Электронная почта"
               labelPlacement="outside"
-              name="email"
-              placeholder="Enter your email"
+              name="contact_email"
+              placeholder="Ваша электронная почта"
               type="email"
               variant="bordered"
             />
             <Textarea
               className="w-full"
-              label="Description"
+              label="Сообщение"
               labelPlacement="outside"
-              placeholder="Enter your description"
+              placeholder="Ваше сообщение"
               variant="bordered"
+              name="contact_text"
             />
-            <Button type="submit" variant="bordered">
-              Submit
+            <Button isLoading={loading} type="submit" variant="ghost">
+              Отправить
             </Button>
+            {success && (
+              <Alert color="success" title="Сообщение успешно отправилось!" />
+            )}
+            {error.isError && (
+              <Alert
+                color="danger"
+                title={`Сообщение не отправилось... Ошибка { ${error.text} }`}
+              />
+            )}
           </Form>
         </div>
       </div>

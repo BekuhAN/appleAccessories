@@ -3,6 +3,7 @@ import {
   Button,
   Card,
   CardBody,
+  CardFooter,
   Input,
   Modal,
   ModalBody,
@@ -13,10 +14,7 @@ import { ProductItem } from "../../interfaces/product";
 import styles from "./product.module.scss";
 import clsx from "clsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHeart as faHeartSolid,
-  faTrashCan,
-} from "@fortawesome/free-solid-svg-icons";
+import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import {
   addWishList,
@@ -28,81 +26,42 @@ import { useDispatch, useSelector } from "react-redux";
 const priceFormat = (price: number) =>
   price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ");
 
-type ProductProps = {
+interface SmallProductProps {
   item: ProductItem;
   isCart?: boolean;
-  isRow?: boolean;
-};
+}
 
-export default function Product({
+export default function SmallProduct({
   item,
   isCart,
-  isRow,
-}: ProductProps): ReactElement {
+}: SmallProductProps): ReactElement {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const dispatch = useDispatch();
   const wishlist = useSelector(getWishList);
   return (
     <>
-      <Card
-        className={clsx(styles.product)}
-        isPressable
-        shadow="sm"
-        onPress={onOpen}
-      >
+      <Card className={styles.product} isPressable shadow="sm" onPress={onOpen}>
         <CardBody className="overflow-visible p-0">
-          <div
-            className={clsx(styles.product__item, isRow && styles.product__row)}
-          >
-            <div className={styles.product__image}>
-              <img src={`/img/product/${item.img}`} alt={item.name} />
-              {item && item.oldPrice > 0 && (
-                <div className={styles.product__image__overlay}>Скидка %</div>
-              )}
-            </div>
-            <div className={styles.product__content}>
-              <div className={styles.product__title}>{item.name} </div>
-              <div className={styles.product__price}>
-                {priceFormat(item.price)} ₽
-                {item && item.oldPrice > 0 && (
-                  <span className={styles.product__price__old}>
-                    {priceFormat(item.oldPrice)} ₽
-                  </span>
-                )}
-                <div className={styles.product__controls}>
-                  {isCart && (
-                    <Input
-                      endContent={
-                        <div className="pointer-events-none flex items-center">
-                          <span className="text-default-400 text-small">
-                            шт.
-                          </span>
-                        </div>
-                      }
-                      labelPlacement="outside"
-                      placeholder="1"
-                      min={1}
-                      max={100}
-                      classNames={{
-                        base: clsx(styles.product__info__buy__input),
-                      }}
-                      type="number"
-                    />
-                  )}
-                  {isRow && (
-                    <FontAwesomeIcon
-                      icon={faTrashCan}
-                      className={styles.product__remove}
-                      onClick={() => {
-                        dispatch(removeWishList(item.id));
-                      }}
-                    />
-                  )}
-                </div>
-              </div>
-            </div>
+          <div className={styles.product__image}>
+            <img src={`/img/product/${item.img}`} alt={item.name} />
+            {item && item.oldPrice > 0 && (
+              <div className={styles.product__image__overlay}>Скидка %</div>
+            )}
           </div>
         </CardBody>
+        <CardFooter>
+          <div className={styles.product__content}>
+            <div className={styles.product__title}>{item.name} </div>
+            <div className={styles.product__price}>
+              {priceFormat(item.price)} ₽
+              {item && item.oldPrice > 0 && (
+                <span className={styles.product__price__old}>
+                  {priceFormat(item.oldPrice)} ₽
+                </span>
+              )}
+            </div>
+          </div>
+        </CardFooter>
       </Card>
       <Modal
         backdrop="blur"

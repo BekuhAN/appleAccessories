@@ -60,7 +60,11 @@ export default function Product({
   const [count, setCount] = useState(item.count);
   return (
     <>
-      <Card className={clsx(styles.product)} shadow="sm">
+      <Card
+        className={clsx(styles.product)}
+        shadow="sm"
+        isPressable={!isCart || !isRow}
+      >
         <CardBody className="overflow-visible p-0">
           <div
             className={clsx(styles.product__item, isRow && styles.product__row)}

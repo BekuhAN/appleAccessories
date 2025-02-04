@@ -46,7 +46,7 @@ export default function CatalogList(): ReactElement {
           label="Сортировка"
           placeholder="Выберите фильтр"
           startContent={<FontAwesomeIcon icon={faFilter} />}
-          selectedKeys={[sort.length > 0 ? sort : "all"]}
+          selectedKeys={[sort.length > 0 ? sort : ""]}
         >
           {filters.map((filter) => (
             <SelectItem key={filter.key} onPress={() => setSort(filter.key)}>
